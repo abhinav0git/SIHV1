@@ -14,7 +14,7 @@ def index():
 def upload_file():
     
     if 'file' not in request.files:
-        return 'No file part'
+        return 'No file part' 
     file = request.files['file']
     
     if file.filename == '':
