@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>औषध HUB</title>
+    <link rel="stylesheet" href="../static/stylesheets/style.css">
+    <link rel="icon" type="image/x-icon" href="../static/img/webpage_logo_final.png">
+    <link rel="shortcut icon" href="#">
+    <script src="../static/scripts/script.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="navbar">
+                <div class="textandlogo">
+                    <a href="/" class="logo"> <img src="../static/img/logo.svg" alt="logo"> </a>
+                    <span class="logoname"><h1>औषध HUB</h1></span>
+                </div>
+
+                <div class="toggle">
+                    <!-- dark/light mode -->
+                </div>
+                
+            </div>
+        </header>
+        <div class="tool-section">
+            <h1 class="toolheading">Medicinal Herb Prediction</h1>
+            <p class="slogan">The aim of this project is to take raw images of the leaves of plants, upon which it identifies whether the plant is one of the 40 medicinal leaves in the chosen dataset of medicinal herbs, if yes, then provide the user with any relevant information relating to the use case and procedure to use them.</p>
+            <div class="toolwindow">
+                <div class="section">
+                        <div class="tool-span">
+                            <div class="tool-area">
+                                <div class="uploadsection">
+                                    <div class="before-upload upload-area">
+                                        <div class="afterImage" id="something">
+                                            <img src = "{{img_path}}" id="image" style="width:auto; height:350px;" class="normal"/>
+                                        </div>
+                                        <!-- <label>
+                                            <img src="" alt="image-logo">
+                                        </label> -->
+                                        <!-- <span class="drag-n-drop-text" id="js-drag-n-drop">Drag &amp; Drop, Upload or Paste image <br></span>
+                                       -->
+                                        <!-- <label for="file" class="browse-btn">
+                                            <img src="../static/img/plus-icon.svg" alt="file upload">
+                                            <span> Browse </span>
+                                        </label> -->
+                                      
+                                       
+                                        <!-- <form action="/upload" method="POST" enctype="multipart/form-data">
+                                            <input type="file" name="file" id="file" hidden="" accept=".jpg,.jpeg,.gif,.png,.bmp,.jpe,.jif,.jfif,.jfi,.webp,.tiff,.tif,.pdf">
+                                            <span class="drag-n-drop-text"><small>(Max Image Size 5 MB)</small></span>
+                                            
+                                            <div class="form-group">        
+                                                <img class="">
+                                                  <button type="submit" class="browse-btn"> Upload </button>
+                                            </div>
+                                        </form>
+                                           -->
+
+                                    </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="reset-btn">
+                                    <a href="index.html" class="logo"><span>Reset</span><img src="../static/img/restart.svg" alt="restart"></a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
