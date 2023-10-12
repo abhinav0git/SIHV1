@@ -6,6 +6,9 @@
         max-height: 200px;
         padding: 2.4rem;
     }
+    #upsection {
+        flex-direction: column; 
+    }
 }
 
 *{
@@ -72,6 +75,7 @@ header {
 }
 
 .tool-section p {
+    padding: 0 1rem 0 1rem;
     text-align: center;
     display: block;
     margin-left: auto;
@@ -90,12 +94,20 @@ header {
     max-height: fit-content;
     border: 3px dashed #d2d1d6;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-basis: 100%;
     height: 433px;
     transition: .1s ease-in-out;
-    /* position: absolute; */
+}
+
+.afterImage {
+    width: 100%;
+    text-align: center;
+}
+
+.afterImage img {
+    max-height: 360px;
 }
 
 .before-upload {
@@ -107,6 +119,47 @@ header {
     text-align: center;
     width: 100%;
 }
+
+ /* submit button */
+.custom-button {
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    padding: 5px 0px;
+    margin: 1.5rem 0px 0px;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 1);
+    background: linear-gradient(90deg, rgb(71, 71, 71) 0%, rgb(23, 23, 23) 101.42%);
+    border-radius: 5px;
+    display: flex;
+    width: 200px;
+    height: 38px;
+    justify-content: space-around;
+    border: none;
+    outline: none;
+}
+
+.custom-button:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+ /* image logo box */
+img#svgImage {
+    margin-bottom: 1.5rem;
+}
+
+.name-img-percentage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+}
+/* 
+.modelresult {
+    margin-left: 2rem;
+} */
 
 .browse-btn {
     min-width: 150px;
@@ -125,18 +178,22 @@ header {
     align-items: center;
 }
 .reset-btn {
-    border: 1px solid white;
-    margin: 5px 0;
+    border: 1px solid #00000000;
+    margin: 0.5rem 0;
     padding: 0 5px;
-    background: white;
     border-radius: 5px;
-    box-shadow: 2px 2px lightgrey;
+    box-shadow: 0px 2px 2px 0px rgb(79, 79, 79);
+    background: linear-gradient(90deg, rgb(71, 71, 71) 0%, rgb(23, 23, 23) 101.42%);
     text-align: center;
+}
+
+.reset-btn:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .reset-btn span {
     font-size: 25px;
-    color: black;
+    color: white;
 }
 
 .reset-btn img{
@@ -146,22 +203,11 @@ header {
     padding-top: 4px;
 }
 
-.custom-button {
-    font-size: 22px;
-    color: white;
-    cursor: pointer;
-    padding: 5px 0px;
-    margin: 1.5rem 0px 0px;
-    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 1);
-    background: linear-gradient(90deg, rgb(71, 71, 71) 0%, rgb(23, 23, 23) 101.42%);
-    border-radius: 5px;
-    display: flex;
-    width: 200px;
-    height: 38px;
-    justify-content: space-around;
-    border: none;
-    outline: none;
+#chartDiv {
+    /* fill: #ffffff00; */
+    max-width: 300px;
+    height: 200px;
+    margin: 0px auto;
+    /* color: #ffffff00; */
 }
-.afterImage img {
-    max-height: 360px;
-}
+

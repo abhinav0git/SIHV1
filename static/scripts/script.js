@@ -1,5 +1,6 @@
 // script.js
-document.getElementById('file').addEventListener('change', function () {
+document.getElementById('file').addEventListener('change', function () 
+{
     const fileInput = document.getElementById('file');
     const imagePreview = document.getElementById('image');
     const imageContainer = document.getElementById('something');
@@ -11,11 +12,14 @@ document.getElementById('file').addEventListener('change', function () {
         reader.onload = function () {
             imagePreview.src = reader.result;
             imageContainer.style.display = 'block';
+            svgImage.style.display = 'none'; // Hide the SVG image
         }
 
         reader.readAsDataURL(file);
-    } else {
+    } 
+    else {
         imagePreview.src = '';
         imageContainer.style.display = 'none';
+        svgImage.style.display = 'block'; // Show the SVG image
     }
 });

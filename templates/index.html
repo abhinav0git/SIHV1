@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="../static/img/webpage_logo_final.png">
     <link rel="shortcut icon" href="#">
     <script src="../static/scripts/script.js" defer></script>
+    <!-- <script src="https://code.jscharting.com/latest/jscharting.js"></script> -->
 
 </head>
 <body>
@@ -34,21 +35,21 @@
                                 <div class="uploadsection">
                                     <div class="before-upload upload-area">
                                         <div class="afterImage" id="something">
-                                            <img id="image" style="width:auto; height:120px;" class="normal"/>
+                                            <img id="image" style="width:auto; height:120px; margin-bottom: 1rem;" class="normal"/>
                                         </div>
                                         <label>
-                                            <img src="../static/img/tool-box-image.svg" alt="image-logo">
+                                            <img id="svgImage" src="../static/img/tool-box-image.svg" alt="image-logo">
                                         </label>
                                         <span class="drag-n-drop-text" id="js-drag-n-drop">Drag &amp; Drop, Upload or Paste image <br></span>
                                       
-                                        <label for="file" class="browse-btn">
+                                        <label id="svgImage2" for="file" class="browse-btn">
                                             <img src="../static/img/plus-icon.svg" alt="file upload">
                                             <span> Browse </span>
                                         </label>
                                       
                                        
                                         <form action="/upload" method="POST" enctype="multipart/form-data">
-                                            <input type="file" name="file" id="file" hidden="" accept=".jpg,.jpeg,.gif,.png,.bmp,.jpe,.jif,.jfif,.jfi,.webp,.tiff,.tif,.pdf">
+                                            <input type="file" name="file" id="file" hidden="" accept=".jpg,.jpeg,.jpe">
                                             <span class="drag-n-drop-text"><small>(Max Image Size 5 MB)</small></span>
                                             <input type="submit" class="custom-button" value="Submit">
                                         </form>
