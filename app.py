@@ -168,9 +168,9 @@ def extract(index):
         df = pd.read_csv("info1.csv") 
 
         # Retrieve column based on index and store as string
-        column_string = df.iloc[index, 2]
+        info = df.iloc[index, 2]
 
-        return column_string
+        return info
     else :
         return 'Not a valid Index'
 
@@ -209,7 +209,7 @@ def upload_file():
 
         info = extract(classes[0][0])
 
-        return render_template("result.html", img_path = img_path, prediction_name = classes[0][1], confidence_level = p[0]*100 )
+        return render_template("result.html", img_path = img_path, prediction_name = classes[0][1], confidence_level = p[0]*100, description = info )
 
     return 'Upload failed. Please check for correct file formats, only jpeg and png are accepted.'
 

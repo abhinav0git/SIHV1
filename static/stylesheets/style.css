@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
 @media (max-width: 768px) {
     #imageRes {
         max-height: 200px;
@@ -31,7 +30,7 @@ header {
 
 .navbar {
     display: flex;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     align-items: center;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
@@ -74,13 +73,12 @@ header {
     margin: 0;
 }
 
-.tool-section p {
+.slogan {
     padding: 0 1rem 0 1rem;
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 900px;
     font-size: 18px;
     font-weight:500;
 }
@@ -156,10 +154,6 @@ img#svgImage {
     width: 100%;
     text-align: center;
 }
-/* 
-.modelresult {
-    margin-left: 2rem;
-} */
 
 .browse-btn {
     min-width: 150px;
@@ -204,10 +198,33 @@ img#svgImage {
 }
 
 #chartDiv {
-    /* fill: #ffffff00; */
     max-width: 300px;
     height: 200px;
     margin: 0px auto;
-    /* color: #ffffff00; */
 }
 
+.paraSection {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #EDF9EE;
+    border: 1px solid #2424241e;
+    border-radius: 8px;
+    box-shadow: #2424241e 5px 5px;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 850px;
+}
+
+.slogann{
+    margin: 2px 1rem;
+    padding: 1rem 2rem;
+}
+
+#circularcursor{
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid transparent;
+}
