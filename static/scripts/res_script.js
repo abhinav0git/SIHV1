@@ -42,7 +42,7 @@
 
 
 var options = {
-    series: [75],
+    series: [confidence_level],
     chart: {
     height: 350,
     type: 'radialBar',
