@@ -197,7 +197,7 @@ def upload_file():
         img_path = 'static/upload/' + file.filename
         file.save(img_path)
         print(img_path)
-
+        # AusafV1\static\upload\leaf1.jpeg
         model = model_loading()
 
         # Predict Function, takes (imagePath, modelName, number of top precitions to return) as parameters
@@ -208,7 +208,6 @@ def upload_file():
         print(classes[0][0], classes[0][1], p[0])
 
         info = extract(classes[0][0])
-
         return render_template("result.html", img_path = img_path, prediction_name = classes[0][1], confidence_level = p[0]*100, description = info )
 
     return 'Upload failed. Please check for correct file formats, only jpeg and png are accepted.'
