@@ -7,6 +7,7 @@
     }
     #upsection {
         flex-direction: column; 
+        margin: 0 1.5rem;
     }
 }
 
@@ -85,17 +86,18 @@ header {
 
 .uploadsection {
     padding: 2rem 0;
-    margin: 20 4rem;
+    margin: 20px 5rem;
     background-color: #EDF9EE;
     border-radius: 10px;
     min-height: 350px;
     max-height: fit-content;
+    max-width: 84rem;
     border: 3px dashed #d2d1d6;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 433px;
+    /* height: 433px; */
     transition: .1s ease-in-out;
 }
 
@@ -213,14 +215,14 @@ img#svgImage {
     box-shadow: #2424241e 5px 5px;
     max-height: fit-content;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 850px;
 }
 
 .slogann{
-    margin: 2px 1rem;
+    margin: 0 1rem;
     padding: 1rem 2rem;
 }
 
