@@ -9,6 +9,12 @@
         flex-direction: column; 
         margin: 0 1.5rem;
     }
+    .custom-button {
+        width: 155px !important;
+    }
+    .browse-btn {
+        width: 110px !important;
+    }
 }
 
 *{
@@ -18,26 +24,35 @@
 body{
     margin: 0;
     font-family: "Poppins", sans-serif;
-    background-color: #d8f1ce;
+    background-image: url(/static/img/squares.svg);
+    /* background-color: rgba(173, 216, 230, 0.419); */
     transition: background 0.2s linear;
 }
 
 header {
-    background: #fff;
     width: 100%;
-    /* color: #fff; */
     padding: 1px 0;
+    line-height: 1.2%;
+}
+
+header h1 {
+    font-size: auto;
 }
 
 .navbar {
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
+    position: sticky;
     display: flex;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.25);
     align-items: center;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
-    margin: 0 auto;
+    margin: 1rem 2rem 0 2rem;
     flex-direction: row;
     justify-content: space-between;
+    border-radius: 20px;
 }
 .textandlogo {
     /* border: 1px solid black; */
@@ -69,19 +84,22 @@ header {
 }
 
 .tool-section h1 {
-    padding-top: 2rem;
+    font-size: 3em;
+    letter-spacing: -0.5%;
+    padding-top: 1.6rem;
     text-align: center;
     margin: 0;
 }
 
 .slogan {
-    padding: 0 1rem 0 1rem;
+    padding: 0 1.5rem 0 1.5rem;
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
     font-size: 18px;
     font-weight:500;
+    line-height: 1.5;
 }
 
 .uploadsection {
@@ -100,6 +118,10 @@ header {
     /* height: 433px; */
     transition: .1s ease-in-out;
 }
+
+#upsectionIndex:hover {
+    background-color: #ebebebd4;
+  }  
 
 .afterImage {
     width: 100%;
@@ -132,6 +154,7 @@ header {
     border-radius: 5px;
     display: flex;
     width: 200px;
+    min-width: 150px;
     height: 38px;
     justify-content: space-around;
     border: none;
@@ -224,9 +247,4 @@ img#svgImage {
 .slogann{
     margin: 0 1rem;
     padding: 1rem 2rem;
-}
-
-#circularcursor{
-    background-color: rgba(0, 0, 0, 0.25);
-    border: 1px solid transparent;
 }

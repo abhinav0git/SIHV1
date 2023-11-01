@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -16,7 +17,7 @@
 
     <div class="container">
         <header>
-            <div class="navbar">
+            <nav class="navbar">
                 <div class="textandlogo">
                     <a href="/" class="logo"> <img src="../static/img/logo.svg" alt="logo"> </a>
                     <span class="logoname"><h1>औषध HUB</h1></span>
@@ -31,17 +32,17 @@
                     </label> -->
                   </div>
                 
-            </div>
+            </nav>
         </header>
         <div class="tool-section">
-            <h1 class="toolheading" style="text-shadow: 1px 1px #888;">Medicinal Herb Prediction</h1>
+            <h1 class="toolheading">Medicinal Herb Prediction</h1>
             <p class="slogan">The aim of this project is to take raw images of the leaves of plants, upon which it identifies whether the plant is one of the 40 medicinal leaves in the chosen dataset of medicinal herbs, if yes, then provide the user with any relevant information relating to the use case and procedure to use them.</p>
             <div class="toolwindow">
                 <div class="section">
                         <div class="tool-span">
                             <div class="tool-area">
-                                <div class="uploadsection" >
-                                    <div class="before-upload upload-area">
+                                <div class="uploadsection" id="upsectionIndex">
+                                    <div class="before-upload upload-area" id="bef-up">
                                         <div class="afterImage" id="something">
                                             <img id="image" style="width:auto; height:120px; margin-bottom: 1rem;" class="normal"/>
                                         </div>
@@ -59,10 +60,9 @@
                                         <form action="/upload" method="POST" enctype="multipart/form-data">
                                             <input type="file" name="file" id="file" hidden="" accept=".jpg,.jpeg,.jpe">
                                             <span class="drag-n-drop-text"><small>(Max Image Size 5 MB)</small></span>
-                                            <input type="submit" class="custom-button" value="Submit">
+                                            <input type="submit" class="custom-button" id="submit-button" value="Submit">
                                         </form>
-                                          
-
+                    
                                     </div>
 
                                     </div>
