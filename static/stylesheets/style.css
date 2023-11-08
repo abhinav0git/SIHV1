@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @media (max-width: 768px) {
+    .logoname{
+        display: none;
+    }
     #imageRes {
         max-height: 200px;
         padding: 2.4rem;
@@ -23,10 +26,11 @@
 }
 
 body{
+    color: #1d1d1f;
     margin: 0;
     font-family: "Poppins", sans-serif;
     background-image: url(/static/img/squares.svg);
-    /* background-color: rgba(173, 216, 230, 0.419); */
+    background-color: rgba(173, 216, 230, 0.419);
     transition: background 0.2s linear;
 }
 
@@ -34,6 +38,9 @@ header {
     width: 100%;
     padding: 1px 0;
     line-height: 1.2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 header h1 {
@@ -41,10 +48,13 @@ header h1 {
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 0.5);
-    -webkit-backdrop-filter: blur(5px);
+    background: rgba(217, 237, 246, 0.82);
+    /* background: linear-gradient(0deg, rgba(217,237,246,1) 0%, rgba(4,99,181,1) 100%); */
+    /* -webkit-backdrop-filter: blur(5px); */
     backdrop-filter: blur(4px);
-    position: sticky;
+    position: fixed;
+    width: 75vw;
+    top: 2%;
     display: flex;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.25);
     align-items: center;
@@ -55,13 +65,14 @@ header h1 {
     justify-content: space-between;
     border-radius: 20px;
 }
+
 .textandlogo {
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 0;
     padding: 0.2rem;
+    font-size: larger;
 }
 .navbar .logo img {
     height: 80px;
@@ -79,51 +90,68 @@ header h1 {
     transform: scale(1.05);
 }
 
+.aboutSection {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.about {
+    /* display: flex;
+    align-items: center; */
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #1d1d1f;
+}
+
 .tool-section {
     display: flex;
     flex-direction: column;
 }
 
 .tool-section h1 {
-    font-size: 3em;
-    letter-spacing: -0.5%;
+    /* margin-top: 9rem; */
+    margin: 9.5rem auto 1.5rem auto;
+    font-family: Tt interfaces,sans-serif;
+    font-size: 4.8rem;
+    letter-spacing: -4.8px;
     padding-top: 1.6rem;
     text-align: center;
-    margin: 0;
 }
 
 .slogan {
+    /* margin-top: 10vh; */
     padding: 0 1.5rem 0 1.5rem;
     text-align: center;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     font-size: 18px;
     font-weight:500;
     line-height: 1.5;
+    font-size: 1.3rem;
 }
 
 .uploadsection {
     padding: 2rem 0;
-    margin: 20px 5rem;
-    margin: 20px 5rem;
+    margin: 25px 5rem;
     background-color: #EDF9EE;
     border-radius: 10px;
     min-height: 350px;
     max-height: fit-content;
-    max-width: 84rem;
-    max-width: 84rem;
+    /* max-width: 84rem; */
     border: 3px dashed #d2d1d6;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* /* height: 433px; */ */
+    /* height: 433px; */ 
     transition: .1s ease-in-out;
 }
 
 #upsectionIndex:hover {
-    background-color: #ebebebd4;
+    background-color: #b8e5bcd6;
   }  
 
 .afterImage {
