@@ -19,6 +19,10 @@
         width: 110px !important;
         margin: 0 1.5rem;
     }
+    .uploadsection{
+        margin: 25px 4rem !important;
+    }
+
 }
 
 *{
@@ -135,13 +139,14 @@ header h1 {
 
 .uploadsection {
     padding: 2rem 0;
-    margin: 25px 5rem;
-    background-color: #EDF9EE;
+    margin: 25px 8rem;
+    /* width: 60%; */
+    background-color: #F9F5F6;
     border-radius: 10px;
     min-height: 350px;
     max-height: fit-content;
     /* max-width: 84rem; */
-    border: 3px dashed #d2d1d6;
+    border: 3px dashed #ccc;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -151,7 +156,7 @@ header h1 {
 }
 
 #upsectionIndex:hover {
-    background-color: #b8e5bcd6;
+    background-color: #F8E8EE;
   }  
 
 .afterImage {
